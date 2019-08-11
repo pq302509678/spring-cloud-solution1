@@ -1,6 +1,6 @@
-![springcloud.png](springcloud.png)
-# spring-cloud-solution1介绍
-spring-cloud-base 是一个基于Spring Cloud的 基础框架示例。
+![springcloud.png](images/springcloud.png)
+# spring-cloud-solution1 介绍
+spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 ## 技术版本介绍
 
 | 项 | 版本 |  
