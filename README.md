@@ -40,10 +40,12 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 # 部署
 
 ## 安装Nacos
-参考 [Nacos基础](https://www.wanglibing.com/2019/08/11/Nacos基础/)
+
+- 参考 [Nacos基础](https://www.wanglibing.com/2019/08/11/Nacos基础/)
 
 ## 安装Skywalking
-参考 [SkyWalking基础](https://www.wanglibing.com/2018/12/22/SkyWalking基础/)
+
+- 参考 [SkyWalking基础](https://www.wanglibing.com/2018/12/22/SkyWalking基础/)
 
 ## 安装ELK
 
