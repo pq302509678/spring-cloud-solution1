@@ -10,11 +10,5 @@ if [ -n "$msg" ]; then
     echo -e "\033[32m[源码提交成功]\033[0m"
     echo "###############################################################"
 else
-    echo "请添加注释再来一遍"
+    echo -e "\033[31m\033[01m\033[05m[ 请添加注释再来一遍 ]\033[0m"
 fi
-#cd /Users/iamwlb/Documents/Workspace/java/spring-cloud-solution1
-#echo ' ' | sudo -S git add .
-#echo ' ' | sudo -S git commit -m "update"
-#echo ' ' | sudo -S git push origin master
-#echo -e "\033[32m[源码提交成功]\033[0m"
-#echo "###############################################################"
