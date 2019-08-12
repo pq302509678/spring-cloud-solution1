@@ -26,9 +26,18 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 ## 系统介绍
 | 子系统 | 端口 | 演示地址 | 说明 | 
 | :----: |:----|:----| :----| 
-| producer |  |  | 生产者 | 
-| consumer |  |  | 消费者 | 
-| demo1 |  |  |  | 
-| demo2 |  |  | - | 
+| producer |  | []() | 生产者 | 
+| consumer |  | []() | 消费者 | 
+| demo1 | 8091 | - [http://localhost:8091/hello?name=wlb](http://localhost:8091/hello?name=wlb)<br>- [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/) | Spring Cloud集成Nanos服务注册和发现 | 
+| demo2 | 8092 | - [http://localhost:8092](http://localhost:8092)<br>- [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/) | Spring Cloud集成Nanos配置管理服务 | 
+| demo3 | 8093 | - [http://localhost:8093](http://localhost:8093)<br>- []() | Spring Cloud集成Skywalking链路监控服务 | 
+
+# 部署
+
+## 安装Nacos
+参考 [Nacos基础](https://www.wanglibing.com/2019/08/11/Nacos基础/)
+
+## 安装Skywalking
+参考 [SkyWalking基础](https://www.wanglibing.com/2018/12/22/SkyWalking基础/)
 
 

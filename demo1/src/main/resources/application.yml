@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: demo1
+  cloud:
+    nacos:
+      discovery:
+        # Nacos Server
+        server-addr: 192.168.0.201:8848
+server:
+  port: 8091
+
+
+

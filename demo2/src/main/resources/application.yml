@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: demo1
+server:
+  port: 8092
+
+# Nacos Server
+nacos:
+  config:
+    server-addr: 192.168.0.201:8848
