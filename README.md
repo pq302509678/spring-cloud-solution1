@@ -3,26 +3,30 @@
 spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 ## 技术版本介绍
 
-| 项 | 版本 |  
-| :---- |:----| 
-| JDK | 1.8 | 
-| SpringBoot | 2.1.7.RELEASE | 
-| SpringCloud | Greenwich.RELEASE | 
-| Nacos | 1.1.3 | 
-| Skywalking | - | 
-| Swagger | - | 
+| 项 | 版本 | 说明 |   
+| :---- |:----|:----|  
+| JDK | 1.8 |  | 
+| SpringBoot | 2.1.7.RELEASE |  | 
+| SpringCloud | Greenwich.RELEASE |  | 
+| Nacos | 1.1.3 |  | 
+| Skywalking | - |  | 
+| Swagger | - |  | 
 
 ## 技术栈
 
 | 技术栈 | 说明 |  
 | :---- |:----| 
-| Kong | 服务网关，用于服务智能路由，负载均衡 | 
-| Nacos | 1. 服务注册和发现<br>2. 服务配置中心 | 
-| Feign | 声明式服务调用，用于消费服务 | 
-| Sentinel | 熔断器 | 
-| Skywalking | 链路监控 | 
-| Spring Boot Admin | 聚合监控微服务的状况 | 
-| Swagger | API接口文档组件 |  
+| JDK | 1.8 |  | 
+| SpringBoot | 2.1.7.RELEASE |  | 
+| SpringCloud | Greenwich.RELEASE |  | 
+| Kong | 1.2 | 服务网关，用于服务智能路由，负载均衡 | 
+| Nacos | 1.1.3 | 1. 服务注册和发现<br>2. 服务配置中心 | 
+| Feign |  | 声明式服务调用，用于消费服务 | 
+| Sentinel |  | 熔断器 | 
+| Skywalking |  | 链路监控 | 
+| Sentinel |  | 熔断、限流 | 
+| Spring Boot Admin |  | 聚合监控微服务的状况 | 
+| Swagger |  | API接口文档组件 |  
 
 ## 系统介绍
 | 子系统 | 端口 | 演示地址 | 说明 | 
