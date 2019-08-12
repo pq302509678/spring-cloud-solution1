@@ -46,7 +46,8 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 参考 [SkyWalking基础](https://www.wanglibing.com/2018/12/22/SkyWalking基础/)
 
 ## 安装ELK
-参考 [ELK基础](https://www.wanglibing.com/2018/08/05/ELK基础/)
-参考 [ELK部署](https://www.wanglibing.com/2019/06/26/ELK部署/)
+
+- 参考 [ELK基础](https://www.wanglibing.com/2018/08/05/ELK基础/)
+- 参考 [ELK部署](https://www.wanglibing.com/2019/06/26/ELK部署/)
 
 
