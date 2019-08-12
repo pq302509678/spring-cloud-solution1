@@ -21,12 +21,11 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | SpringCloud | Greenwich.RELEASE |  | 
 | Kong | 1.2 | 服务网关，用于服务智能路由，负载均衡 | 
 | Nacos | 1.1.3 | 1. 服务注册和发现<br>2. 服务配置中心 | 
-| Feign |  | 声明式服务调用，用于消费服务 | 
-| Sentinel |  | 熔断器 | 
-| Skywalking |  | 链路监控 | 
-| Sentinel |  | 熔断、限流 | 
-| Spring Boot Admin |  | 聚合监控微服务的状况 | 
-| Swagger |  | API接口文档组件 |  
+| Feign | - | 声明式服务调用，用于消费服务 | 
+| Skywalking | 6.3.0 | 链路监控 | 
+| Sentinel | 1.6.3 | 熔断、限流 | 
+| Spring Boot Admin | - | 聚合监控微服务的状况 | 
+| Swagger | - | API接口文档组件 |  
 
 ## 系统介绍
 | 子系统 | 端口 | 演示地址 | 说明 | 
