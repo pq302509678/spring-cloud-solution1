@@ -1,18 +1,8 @@
 ![springcloud.png](images/springcloud.png)
 # spring-cloud-solution1 介绍
 spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
-## 技术版本介绍
 
-| 项 | 版本 | 说明 |   
-| :---- |:----|:----|  
-| JDK | 1.8 |  | 
-| SpringBoot | 2.1.7.RELEASE |  | 
-| SpringCloud | Greenwich.RELEASE |  | 
-| Nacos | 1.1.3 |  | 
-| Skywalking | - |  | 
-| Swagger | - |  | 
-
-## 技术栈
+# 技术栈
 
 | 技术栈 | 说明 |  
 | :---- |:----| 
@@ -27,7 +17,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | Spring Boot Admin | - | 聚合监控微服务的状况 | 
 | Swagger | - | API接口文档组件 |  
 
-## 系统介绍
+# 系统介绍
 | 子系统 | 端口 | 演示地址 | 说明 | 
 | :----: |:----|:----| :----| 
 | producer | 8081 | - [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/)<br>- [http://localhost:8081](http://localhost:8081) | 生产者 | 
