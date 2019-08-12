@@ -8,6 +8,7 @@
         <version>2.1.7.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+
     <groupId>com.wanglibing</groupId>
     <artifactId>demo1</artifactId>
     <version>1.0</version>
@@ -30,21 +31,12 @@
             <scope>test</scope>
         </dependency>
 
-
         <!-- 在 Spring Boot 项目中启动 Nacos 的服务发现功能 -->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.boot</groupId>-->
-<!--            <artifactId>nacos-discovery-spring-boot-starter</artifactId>-->
-<!--            <version>0.2.2</version>-->
-<!--        </dependency>-->
-
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
             <version>2.1.0.RELEASE</version>
         </dependency>
-
-
     </dependencies>
 
     <build>

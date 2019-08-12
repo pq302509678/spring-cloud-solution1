@@ -1,0 +1,10 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: producer
+  cloud:
+    nacos:
+      discovery:
+        # Nacos Server
+        server-addr: 192.168.0.201:8848
