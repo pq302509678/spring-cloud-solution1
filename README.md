@@ -4,8 +4,8 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 
 # 技术栈
 
-| 技术栈 | 说明 |  
-| :---- |:----| 
+| 技术栈 | 版本 | 说明 |  
+| :---- |:----| :----| 
 | JDK | 1.8 |  | 
 | SpringBoot | 2.1.7.RELEASE |  | 
 | SpringCloud | Greenwich.RELEASE |  | 
