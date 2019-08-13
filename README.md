@@ -81,14 +81,14 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 
 ## demo1演示
 
-1. 部署Nacos 
+1. 部署Nacos  
 参考 [安装Nacos](#安装Nacos)
 2. 打开[http://localhost:8091/hello?name=wanglibing](http://localhost:8091/hello?name=wanglibing) 
 3. 【Nacos】--> 【服务管理】--> 【服务列表】，观察。
 
 ## demo2演示
 
-1. 部署Nacos 
+1. 部署Nacos  
 参考 [安装Nacos](#安装Nacos)
 2. 初始化数据
 ```
