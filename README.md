@@ -9,7 +9,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | JDK | 1.8 |  | 
 | SpringBoot | 2.1.7.RELEASE |  | 
 | SpringCloud | Greenwich.RELEASE |  | 
-| Kong | 1.2 | 服务网关，用于服务智能路由，负载均衡 | 
+| Kong | 1.2 | 服务网关<br>主要功能：<br>- 路由<br>- 鉴权<br>- 认证<br>- 灰度 | 
 | Nacos | 1.1.3 | 1. 服务注册和发现<br>2. 服务配置中心 | 
 | Feign | - | 声明式服务调用，用于消费服务 | 
 | Skywalking | 6.3.0 | 链路监控 | 
