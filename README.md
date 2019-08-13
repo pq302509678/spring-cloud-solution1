@@ -86,7 +86,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 
 ### 演示服务注册
  
-- [http://localhost:8091/hello?name=wanglibing](http://localhost:8091/hello?name=wanglibing) 
+打开[http://localhost:8091/hello?name=wanglibing](http://localhost:8091/hello?name=wanglibing) 
 
 【Nacos】--> 【服务管理】--> 【服务列表】，观察。
 
@@ -99,12 +99,12 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 
 1. 初始化数据
 ```
-$ curl -X POST "http://192.168.0.201:8848/nacos/v1/cs/configs?dataId=com.wanglibing.demo2.yaml&group=DEFAULT_GROUP&content=useLocalCache=false"
+$ curl -X POST "http://192.168.0.201:8848/nacos/v1/cs/configs?dataId=com.wanglibing.demo2.yaml&group=DEFAULT_GROUP&type=yaml&content=useLocalCache=false"
 ```
 2. 打开[http://localhost:8092/config/get](http://localhost:8092/config/get)，观察useLocalCache的值。
-3. 修改数据
+3. 在Nacos中，将com.wanglibing.demo2.yaml修改为：
 ```
-$ curl -X POST "http://192.168.0.201:8848/nacos/v1/cs/configs?dataId=com.wanglibing.demo2.yaml&group=DEFAULT_GROUP&content=useLocalCache=true"
+useLocalCache: true
 ```
 4. 刷新[http://localhost:8092/config/get](http://localhost:8092/config/get)，观察useLocalCache的值。
 
