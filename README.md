@@ -79,49 +79,42 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 - [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/)
 - [http://localhost:8082](http://localhost:8082)
 
-## demo1
+## demo1演示
 
-### 部署Nacos
+1. 部署Nacos
 参考 [安装Nacos](#安装Nacos)
+2. 打开[http://localhost:8091/hello?name=wanglibing](http://localhost:8091/hello?name=wanglibing) 
+3. 【Nacos】--> 【服务管理】--> 【服务列表】，观察。
 
-### 演示服务注册
- 
-打开[http://localhost:8091/hello?name=wanglibing](http://localhost:8091/hello?name=wanglibing) 
+## demo2演示
 
-【Nacos】--> 【服务管理】--> 【服务列表】，观察。
-
-## demo2
-
-### 部署Nacos
+1. 部署Nacos
 参考 [安装Nacos](#安装Nacos)
-
-### 演示
-
-1. 初始化数据
+2. 初始化数据
 ```
 $ curl -X POST "http://192.168.0.201:8848/nacos/v1/cs/configs?dataId=com.wanglibing.demo2.yaml&group=DEFAULT_GROUP&type=yaml&content=useLocalCache=false"
 ```
-2. 打开[http://localhost:8092/config/get](http://localhost:8092/config/get)，观察useLocalCache的值。
-3. 在Nacos中，将com.wanglibing.demo2.yaml修改为：
+3. 打开[http://localhost:8092/config/get](http://localhost:8092/config/get)，观察useLocalCache的值。
+4. 在Nacos中，将com.wanglibing.demo2.yaml修改为：
 ```
 useLocalCache: true
 ```
-4. 刷新[http://localhost:8092/config/get](http://localhost:8092/config/get)，观察useLocalCache的值。
+5. 刷新[http://localhost:8092/config/get](http://localhost:8092/config/get)，观察useLocalCache的值。
 
 
-## demo3
+## demo3演示
 
 - []()
 - [http://localhost:8093](http://localhost:8093)
 
-## demo4
+## demo4演示
 
 - [http://localhost:8094](http://localhost:8094)
 
-## demo5
+## demo5演示
 
 - [http://localhost:8095](http://localhost:8095)
 
-## demo6
+## demo6演示
 
 - [http://localhost:8096](http://localhost:8096)
