@@ -23,7 +23,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | producer | 8081 | - [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/)<br>- [http://localhost:8081](http://localhost:8081) | 生产者 | 
 | consumer | 8082 | - [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/)<br>- [http://localhost:8082](http://localhost:8082) | 消费者 | 
 | demo1 | 8091 | - [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/)<br>- [http://localhost:8091/hello?name=wanglibing](http://localhost:8091/hello?name=wanglibing) | Spring Cloud集成Nanos服务注册和发现 | 
-| demo2 | 8092 | - [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/)<br>- [http://localhost:8092](http://localhost:8092) | Spring Cloud集成Nanos分布式配置管理服务 | 
+| demo2 | 8092 | - [http://192.168.0.201:8848/nacos/](http://192.168.0.201:8848/nacos/)<br>- [http://localhost:8092/config/get](http://localhost:8092/config/get) | Spring Cloud集成Nanos分布式配置管理服务 | 
 | demo3 | 8093 | - []()<br>- [http://localhost:8093](http://localhost:8093) | Spring Cloud集成Skywalking链路监控服务 | 
 | demo4 | 8094 | - [http://localhost:8094](http://localhost:8094) | Spring Cloud整合gRPC | 
 | demo5 | 8095 | - [http://localhost:8095](http://localhost:8095) | Spring Cloud整合ELK | 
