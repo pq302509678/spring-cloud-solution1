@@ -34,9 +34,9 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 ## 环境说明
 | 中间件 | 地址 | 说明 | 
 | :----: |:----|:----| 
-| Nacos | 192.168.0.201 | URL：http://192.168.0.201:8848/nacos<br>用户名：admin<br>密码：admin | 
+| Nacos | 192.168.0.201 | URL：[http://192.168.0.201:8848/nacos](http://192.168.0.201:8848/nacos)<br>用户名：admin<br>密码：admin | 
 | Elasticsearch | 192.168.0.202 | 用于Skywalking数据存储 | 
-| Skywalking | 192.168.0.203 | - | 
+| Skywalking | 192.168.0.203 | URL：[http://192.168.0.203:8080](http://192.168.0.203:8080)<br>用户名：admin<br>密码：admin | 
 
 ## 安装Nacos
 
