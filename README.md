@@ -126,6 +126,9 @@ useLocalCache: true
 
 ## demo8演示
 ```
+# 切换目录
+$ cd demo8
+
 # 构建镜像
 $ mvn clean package docker:build
 

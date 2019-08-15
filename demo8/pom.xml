@@ -35,11 +35,16 @@
     <build>
         <plugins>
             <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+            <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.4.12</version>
                 <configuration>
-                    <imageName>demo8-1.0</imageName>
+                    <!-- 注意imageName一定要是符合正则[a-z0-9-_.]的，否则构建不会成功 -->
+                    <imageName>demo8</imageName>
                     <baseImage>java</baseImage>
                     <entryPoint>["java", "-jar", "/${project.build.finalName}.jar"]</entryPoint>
                     <resources>
@@ -57,13 +62,18 @@
     <!-- 方式2：使用Dockerfile构建镜像 -->
 <!--    <build>-->
 <!--        <plugins>-->
-<!--            &lt;!&ndash; docker的maven插件，官网：https://github.com/spotify/docker-maven-plugin &ndash;&gt;-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--            &lt;!&ndash; docker的maven插件 &ndash;&gt;-->
 <!--            <plugin>-->
 <!--                <groupId>com.spotify</groupId>-->
 <!--                <artifactId>docker-maven-plugin</artifactId>-->
 <!--                <version>0.4.12</version>-->
 <!--                <configuration>-->
-<!--                    <imageName>demo8-1.0</imageName>-->
+                        <!-- 注意imageName一定要是符合正则[a-z0-9-_.]的，否则构建不会成功 -->
+<!--                    <imageName>demo8</imageName>-->
 <!--                    &lt;!&ndash; 指定Dockerfile所在的路径 &ndash;&gt;-->
 <!--                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>-->
 <!--                    <resources>-->
