@@ -16,6 +16,8 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <docker.skip.build></docker.skip.build>
+        <docker.image.prefix></docker.image.prefix>
     </properties>
 
     <dependencies>
@@ -41,7 +43,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.4.12</version>
+                <version>1.1.1</version>
                 <configuration>
                     <!-- 注意imageName一定要是符合正则[a-z0-9-_.]的，否则构建不会成功 -->
                     <imageName>demo8</imageName>
@@ -76,6 +78,57 @@
 <!--                    <imageName>demo8</imageName>-->
 <!--                    &lt;!&ndash; 指定Dockerfile所在的路径 &ndash;&gt;-->
 <!--                    <dockerDirectory>${project.basedir}/src/main/docker</dockerDirectory>-->
+<!--                    <resources>-->
+<!--                        <resource>-->
+<!--                            <targetPath>/</targetPath>-->
+<!--                            <directory>${project.build.directory}</directory>-->
+<!--                            <include>${project.build.finalName}.jar</include>-->
+<!--                        </resource>-->
+<!--                    </resources>-->
+<!--                </configuration>-->
+<!--            </plugin>-->
+<!--        </plugins>-->
+<!--    </build>-->
+
+    <!-- 方式3：更灵活的配置 -->
+<!--    <build>-->
+<!--        <plugins>-->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--            </plugin>-->
+<!--            <plugin>-->
+<!--                <groupId>com.spotify</groupId>-->
+<!--                <artifactId>docker-maven-plugin</artifactId>-->
+<!--                <version>1.1.1</version>-->
+<!--                &lt;!&ndash;插件绑定到phase&ndash;&gt;-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <phase>install</phase>-->
+<!--                        <goals>-->
+<!--                            <goal>build</goal>-->
+<!--                        </goals>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--                <configuration>-->
+<!--                    &lt;!&ndash;配置变量，包括是否build、imageName、imageTag，非常灵活&ndash;&gt;-->
+<!--                    <skipDocker>${docker.skip.build}</skipDocker>-->
+<!--                    <imageName>${docker.image.prefix}/${project.artifactId}</imageName>-->
+<!--                    &lt;!&ndash;最后镜像产生了两个tag，版本和和最新的&ndash;&gt;-->
+<!--                    <imageTags>-->
+<!--                        <imageTag>${project.version}</imageTag>-->
+<!--                        <imageTag>latest</imageTag>-->
+<!--                    </imageTags>-->
+<!--                    <forceTags>true</forceTags>-->
+<!--                    <env>-->
+<!--                        <TZ>Asia/Shanghai</TZ>-->
+<!--                    </env>-->
+<!--                    &lt;!&ndash;时区配置&ndash;&gt;-->
+<!--                    <runs>-->
+<!--                        <run>ln -snf /usr/share/zoneinfo/$TZ /etc/localtime</run>-->
+<!--                        <run>echo $TZ > /etc/timezone</run>-->
+<!--                    </runs>-->
+<!--                    <dockerDirectory>${project.basedir}</dockerDirectory>-->
 <!--                    <resources>-->
 <!--                        <resource>-->
 <!--                            <targetPath>/</targetPath>-->
