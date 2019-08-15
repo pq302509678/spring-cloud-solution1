@@ -24,7 +24,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | 子系统 | 端口 | 说明 | 
 | :----: |:----|:----| 
 | producer | 8081 | **生产者**<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
-| consumer | 8082 | 消费者 | 
+| consumer | 8082 | **消费者**<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | uaa | 8083 | - 认证<br>- 鉴权 | 
 | demo1 | 8091 | Spring Cloud集成Nanos服务注册和发现 | 
 | demo2 | 8092 | Spring Cloud集成Nanos分布式配置管理服务 | 
