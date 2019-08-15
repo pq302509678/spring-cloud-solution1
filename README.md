@@ -32,6 +32,8 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | demo4 | 8094 | Spring Cloud整合gRPC | 
 | demo5 | 8095 | Spring Cloud整合ELK | 
 | demo6 | 8096 | Spring Cloud整合Sentinel | 
+| demo7 | 8097 | 使用fabric8io构建Docker镜像 | 
+| demo8 | 8098 | 使用spotify构建Docker镜像 | 
 
 # 部署
 
@@ -116,3 +118,12 @@ useLocalCache: true
 ## demo6演示
 
 - [http://localhost:8096](http://localhost:8096)
+
+## demo7演示
+
+- [http://localhost:8097](http://localhost:8097)
+
+## demo8演示
+
+- [http://localhost:8098](http://localhost:8098)
+
