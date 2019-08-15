@@ -8,15 +8,15 @@ spring:
       # 分布式配置
       config:
         # Data ID
-        prefix: com.wanglibing.demo2.yaml
+        prefix: com.wanglibing.producer.yaml
         # 配置格式
         file-extension: yaml
         # Nacos Server
-        server-addr: 192.168.0.201:8848
+        server-addr: 192.168.62.201:8848
         refresh:
           # 是否开启动态刷新
           enable: true
       # 服务发现
       discovery:
         # Nacos Server
-        server-addr: 192.168.0.201:8848
+        server-addr: 192.168.62.201:8848

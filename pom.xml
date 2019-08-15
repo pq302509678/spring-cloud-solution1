@@ -17,6 +17,8 @@
 
     <modules>
         <module>producer</module>
+        <module>consumer</module>
+        <module>uaa</module>
     </modules>
 
     <properties>
@@ -38,6 +40,12 @@
                 <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
                 <version>2.1.0.RELEASE</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+                <version>0.9.0.RELEASE</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -57,6 +65,12 @@
         <dependency>
             <groupId>com.alibaba.cloud</groupId>
             <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!-- Nacos 配置管理服务 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
         </dependency>
     </dependencies>
 
