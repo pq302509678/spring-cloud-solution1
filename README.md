@@ -125,6 +125,19 @@ useLocalCache: true
 - [http://localhost:8097](http://localhost:8097)
 
 ## demo8演示
+```
+# 构建镜像
+$ mvn clean package docker:build
 
-- [http://localhost:8098](http://localhost:8098)
+# 查看镜像
+$ docker images | grep demo8
+
+# 启动镜像
+$ docker run -p 8098:8098 demo8
+
+# 访问
+$ curl http://localhost:8098
+```
+
+
 
