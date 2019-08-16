@@ -29,6 +29,24 @@
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
         </dependency>
+
+        <!-- 配置GRPC支持和GRPC代码生成工具，集成GrpcServer端-->
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-netty-shaded</artifactId>
+            <version>1.15.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-protobuf</artifactId>
+            <version>1.15.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.grpc</groupId>
+            <artifactId>grpc-stub</artifactId>
+            <version>1.15.0</version>
+        </dependency>
+        <!-- 配置GRPC支持和GRPC代码生成工具，集成GrpcServer端 end-->
     </dependencies>
 
     <build>

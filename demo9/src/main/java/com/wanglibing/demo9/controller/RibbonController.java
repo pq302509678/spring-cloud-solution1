@@ -27,6 +27,7 @@ public class RibbonController {
 
     @GetMapping(value = "ribbon/get")
     public String ribbonGet() {
+
         return restTemplate.getForEntity("http://producer/get?para={0}", String.class, "client_ribbon").getBody();
     }
 
