@@ -23,15 +23,16 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 # 系统介绍
 | 子系统 | 端口 | 说明 | 
 | :----: |:----|:----| 
+| kong | 80 | (功能开发未完成)<br>**服务网关**。主要功能：<br>- 请求接入<br>- 请求路径校验<br>- 路由 | 
 | producer | 8081 | **生产者**<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | consumer | 8082 | **消费者**<br>- 使用Feign调用生产者<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
-| uaa | 8083 | <font color=#DC143C>(功能开发未完成)</font><br>- 认证<br>- 鉴权<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
+| uaa | 8083 | (功能开发未完成)<br>- 认证<br>- 鉴权<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | demo1 | 8091 | Spring Cloud集成Nanos服务注册和发现 | 
 | demo2 | 8092 | Spring Cloud集成Nanos分布式配置管理服务 | 
 | demo3 | 8093 | Spring Cloud集成Skywalking链路监控服务 | 
-| demo4 | 8094 | Spring Cloud整合gRPC<font color=#DC143C>(功能开发未完成)</font> | 
-| demo5 | 8095 | Spring Cloud整合ELK<font color=#DC143C>(功能开发未完成)</font> | 
-| demo6 | 8096 | Spring Cloud整合Sentinel<font color=#DC143C>(功能开发未完成)</font> | 
+| demo4 | 8094 | Spring Cloud整合gRPC<br>(功能开发未完成) | 
+| demo5 | 8095 | Spring Cloud整合ELK<br>(功能开发未完成) | 
+| demo6 | 8096 | Spring Cloud整合Sentinel<br>(功能开发未完成) | 
 | demo7 | 8097 | 使用fabric8io构建Docker镜像 | 
 | demo8 | 8098 | 使用spotify构建Docker镜像 | 
 | demo9 | 8099 | 演示：Ribbon调用生产者（不推荐） | 
