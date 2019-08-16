@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: demo9
+  cloud:
+    nacos:
+      discovery:
+        # Nacos Server
+        server-addr: 192.168.0.201:8848
+server:
+  port: 8099
+

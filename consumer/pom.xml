@@ -7,6 +7,7 @@
         <artifactId>spring-cloud-solution1</artifactId>
         <version>1.0</version>
     </parent>
+
     <groupId>com.wanglibing</groupId>
     <artifactId>consumer</artifactId>
     <version>1.0</version>
@@ -18,6 +19,7 @@
     </properties>
 
     <dependencies>
+
     </dependencies>
 
     <build>

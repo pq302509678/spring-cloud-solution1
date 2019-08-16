@@ -24,7 +24,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | 子系统 | 端口 | 说明 | 
 | :----: |:----|:----| 
 | producer | 8081 | **生产者**<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
-| consumer | 8082 | **消费者**<br>- 客户端的两种调用方式Ribbon（不推荐）、Feign（推荐）<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
+| consumer | 8082 | **消费者**<br>- 使用Feign调用生产者<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | uaa | 8083 | - 认证<br>- 鉴权<br>- 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | demo1 | 8091 | Spring Cloud集成Nanos服务注册和发现 | 
 | demo2 | 8092 | Spring Cloud集成Nanos分布式配置管理服务 | 
@@ -34,6 +34,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | demo6 | 8096 | Spring Cloud整合Sentinel | 
 | demo7 | 8097 | 使用fabric8io构建Docker镜像 | 
 | demo8 | 8098 | 使用spotify构建Docker镜像 | 
+| demo9 | 8099 | 演示：Ribbon调用生产者（不推荐） | 
 
 # 部署
 
@@ -80,12 +81,8 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 
 ## consumer演示
 
-### Ribbon调用
-
-- [http://localhost:8082/ribbon/get](http://localhost:8082/ribbon/get)
-- [http://localhost:8082/ribbon/post](http://localhost:8082/ribbon/post)
-
-
+- [http://localhost:8082/get?para=kevin](http://localhost:8082/get?para=kevin)
+- [http://localhost:8082/post?para=kevin](http://localhost:8082/post?para=kevin)
 
 ## demo1演示
 
@@ -146,5 +143,9 @@ $ docker run -p 8098:8098 demo8
 $ curl http://localhost:8098
 ```
 
+## demo9演示
+
+- [http://localhost:8099/ribbon/get](http://localhost:8082/ribbon/get)
+- [http://localhost:8099/ribbon/post](http://localhost:8082/ribbon/post)
 
 

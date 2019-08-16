@@ -5,6 +5,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
 
 @SpringBootApplication
+/**
+ * 配置服务发现
+ */
 @EnableDiscoveryClient
 public class Demo1Application {
 
