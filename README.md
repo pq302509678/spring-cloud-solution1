@@ -90,7 +90,13 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 
 ### 获取授权码
 
-- [http://localhost:8083/oauth/authorize?client_id=client&response_type=code](http://localhost:8083/oauth/authorize?client_id=client&response_type=code)
+1. 打开 [http://localhost:8083/oauth/authorize?client_id=client&response_type=code](http://localhost:8083/oauth/authorize?client_id=client&response_type=code)，授权后会跳转到https://www.wanglibing.com/?code=BYVXO3，授权码即为code。
+2. 用上一步得到的code进行如下post请求，获取access_token
+```
+$ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'grant_type=authorization_code&code=BYVXO3' "http://client:secret@localhost:8083/oauth/token"
+# 返回access_token
+{"access_token":"c00f90de-8dd3-4429-99b9-36dba6a4ed51","token_type":"bearer","expires_in":43199,"scope":"app"}%
+   ```
 
 ## demo1演示
 
