@@ -16,7 +16,6 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | Sentinel | 1.6.3 | 熔断、限流 | 
 | Spring Boot Admin | - | 聚合监控微服务的状况 | 
 | Spring Security OAuth2.0 |  | Spring Security与OAuth2.0集成 | 
-| JWT |  | Json Web Token，缓解UAA的压力 | 
 | Swagger | - | API接口文档组件 |  
 
 
