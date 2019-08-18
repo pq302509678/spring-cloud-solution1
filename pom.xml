@@ -33,14 +33,6 @@
         </license>
     </licenses>
 
-    <developers>
-        <developer>
-            <id>iamwlb</id>
-            <name>wanglibing</name>
-            <email>iamwanglibing@qq.com</email>
-        </developer>
-    </developers>
-
     <dependencyManagement>
         <dependencies>
             <dependency>
