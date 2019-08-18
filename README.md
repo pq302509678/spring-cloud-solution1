@@ -86,6 +86,12 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 - [http://localhost:8082/get?para=kevin](http://localhost:8082/get?para=kevin)
 - [http://localhost:8082/post?para=kevin](http://localhost:8082/post?para=kevin)
 
+## UAA演示
+
+### 获取授权码
+
+- [http://localhost:8083/oauth/authorize?client_id=client&response_type=code](http://localhost:8083/oauth/authorize?client_id=client&response_type=code)
+
 ## demo1演示
 
 1. 打开[http://localhost:8091/hello?name=wanglibing](http://localhost:8091/hello?name=wanglibing) 
