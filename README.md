@@ -26,7 +26,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 
 # 系统介绍
 | 子系统 | 端口 | 说明 | 特性 | 
-| :----: |:----|:----| 
+| :----: |:----|:----|:----| 
 | kong | 80 | (功能开发未完成)<br>**服务网关**。主要功能：<br>- 请求接入<br>- 请求路径校验<br>- 路由 |  | 
 | producer | 8081 | **生产者** | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | consumer | 8082 | **消费者**<br>- 使用Feign调用生产者 | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合Sentinel |  
