@@ -1,0 +1,16 @@
+2019-08-19 at 21:16:14 CST [main] INFO  com.wanglibing.demo10.Demo10Application   - 演示：使用log4j2
+2019-08-19 at 21:16:14 CST [main] INFO  com.wanglibing.demo10.Demo10Application   - Info log
+2019-08-19 at 21:16:14 CST [main] WARN  com.wanglibing.demo10.Demo10Application   - Hey, This is a warning!
+2019-08-19 at 21:16:14 CST [main] INFO  com.wanglibing.demo10.Demo10Application   - Starting Demo10Application on iamwlbdeMBP with PID 3665 (/Users/iamwlb/Documents/Workspace/java/spring-cloud-solution1/demo10/target/classes started by iamwlb in /Users/iamwlb/Documents/Workspace/java/spring-cloud-solution1)
+2019-08-19 at 21:16:14 CST [main] INFO  com.wanglibing.demo10.Demo10Application   - No active profile set, falling back to default profiles: default
+2019-08-19 at 21:16:15 CST [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer   - Tomcat initialized with port(s): 8100 (http)
+2019-08-19 at 21:16:15 CST [main] INFO  org.apache.coyote.http11.Http11NioProtocol   - Initializing ProtocolHandler ["http-nio-8100"]
+2019-08-19 at 21:16:15 CST [main] INFO  org.apache.catalina.core.StandardService   - Starting service [Tomcat]
+2019-08-19 at 21:16:15 CST [main] INFO  org.apache.catalina.core.StandardEngine   - Starting Servlet engine: [Apache Tomcat/9.0.22]
+2019-08-19 at 21:16:15 CST [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]   - Initializing Spring embedded WebApplicationContext
+2019-08-19 at 21:16:15 CST [main] INFO  org.springframework.web.context.ContextLoader   - Root WebApplicationContext: initialization completed in 1002 ms
+2019-08-19 at 21:16:16 CST [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor   - Initializing ExecutorService 'applicationTaskExecutor'
+2019-08-19 at 21:16:16 CST [main] INFO  org.apache.coyote.http11.Http11NioProtocol   - Starting ProtocolHandler ["http-nio-8100"]
+2019-08-19 at 21:16:16 CST [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer   - Tomcat started on port(s): 8100 (http) with context path ''
+2019-08-19 at 21:16:16 CST [main] INFO  com.wanglibing.demo10.Demo10Application   - Started Demo10Application in 2.162 seconds (JVM running for 3.533)
+2019-08-19 at 21:18:24 CST [Thread-7] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor   - Shutting down ExecutorService 'applicationTaskExecutor'

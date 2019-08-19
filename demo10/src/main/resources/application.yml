@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: demo10
+server:
+  port: 8100
+
+

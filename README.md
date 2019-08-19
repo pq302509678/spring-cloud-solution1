@@ -17,8 +17,10 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | Spring Boot Admin | - | 聚合监控微服务的状况 | 
 | Spring Security OAuth2.0 |  | Spring Security与OAuth2.0集成 | 
 | HikariCP | 3.3.1 | 连接池 | 
-| MyBatis |  | 数据库访问 | 
+| MyBatis |  | 访问数据库 | 
 | [tk-mybatis](http://mybatis.tk) |  | 通用Mapper | 
+| [log4j2]() |  | 记录日志 | 
+| lombok |  | 简化代码 | 
 | Swagger | - | API接口文档组件 |  
 
 
@@ -39,6 +41,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | demo7 | 8097 | 演示：使用fabric8io构建Docker镜像 | 
 | demo8 | 8098 | 演示：使用spotify构建Docker镜像 | 
 | demo9 | 8099 | 演示：Ribbon调用生产者（不推荐） | 
+| demo10 | 8100 | 演示：整合log4j2 | 
 
 
 # 部署
@@ -165,4 +168,6 @@ $ curl http://localhost:8098
 - [http://localhost:8099/ribbon/get](http://localhost:8082/ribbon/get)
 - [http://localhost:8099/ribbon/post](http://localhost:8082/ribbon/post)
 
+## demo10演示
+【运行】Demo10Application
 
