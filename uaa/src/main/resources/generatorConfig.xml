@@ -3,7 +3,8 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 
 <generatorConfiguration>
-    <context id="webapi" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+    <context id="uaa" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+
         <!--处理sql中的`符号-->
         <property name="beginningDelimiter" value="`"/>
         <property name="endingDelimiter" value="`"/>
@@ -13,6 +14,7 @@
         <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
         <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
             <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+<!--            <property name="mappers" value="base.MyMapper"/>-->
             <property name="caseSensitive" value="true"/>
         </plugin>
 
