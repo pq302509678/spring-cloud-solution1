@@ -18,6 +18,8 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | Spring Security OAuth2.0 |  | Spring Security与OAuth2.0集成 | 
 | HikariCP | 3.3.1 | 连接池 | 
 | MyBatis |  | 访问数据库 | 
+| MyBatis-Generator |  | 自动化代码生成插件 | 
+| Mybatis PageHelper |  | 物理分页插件 | 
 | [tk-mybatis](http://mybatis.tk) |  | 通用Mapper | 
 | [log4j2]() |  | 记录日志 | 
 | lombok |  | 简化代码 | 
