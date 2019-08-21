@@ -22,6 +22,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | Mybatis PageHelper |  | 物理分页插件 | 
 | [tk-mybatis](http://mybatis.tk) |  | 通用Mapper | 
 | [log4j2]() |  | 记录日志 | 
+| devtools |  | 热部署 | 
 | lombok |  | 简化代码 | 
 | Swagger | - | API接口文档组件 |  
 
@@ -94,9 +95,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 - [http://localhost:8082/get?para=kevin](http://localhost:8082/get?para=kevin)
 - [http://localhost:8082/post?para=kevin](http://localhost:8082/post?para=kevin)
 
-## UAA演示
-
-### 获取授权码
+## uaa演示
 
 1. 打开 [http://localhost:8083/oauth/authorize?client_id=client&response_type=code](http://localhost:8083/oauth/authorize?client_id=client&response_type=code)，授权后会跳转到https://www.wanglibing.com/?code=BYVXO3，授权码即为code。
 用户名：admin
@@ -107,6 +106,11 @@ $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'grant_ty
 # 返回access_token
 {"access_token":"c00f90de-8dd3-4429-99b9-36dba6a4ed51","token_type":"bearer","expires_in":43199,"scope":"app"}%
    ```
+## resource演示
+
+- http://localhost:8084
+- 用户名：user
+- 密码：参见控制台输出，形如：Using generated security password: cf6a9eb5-6f00-4975-a2bd-a4006901c679
 
 ## demo1演示
 
