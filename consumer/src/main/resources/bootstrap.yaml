@@ -1,8 +1,8 @@
 server:
-  port: 8081
+  port: 8082
 spring:
   application:
-    name: producer
+    name: consumer
   datasource:
     type: com.zaxxer.hikari.HikariDataSource
     driver-class-name: com.mysql.jdbc.Driver
@@ -30,13 +30,18 @@ spring:
         org.springframework.web: INFO
         org.springframework.security: INFO
         org.springframework.security.oauth2: INFO
-
+  #  cloud:
+  #    nacos:
+  #      # 服务发现
+  #      discovery:
+  #        # Nacos Server
+  #        server-addr: 192.168.0.201:8848
   cloud:
     nacos:
       # 分布式配置
       config:
         # Data ID
-        prefix: com.wanglibing.producer.yaml
+        prefix: com.wanglibing.consumer.yaml
         # 配置格式
         file-extension: yaml
         # Nacos Server
