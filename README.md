@@ -34,7 +34,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | producer | 8081 | **生产者** | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | consumer | 8082 | **消费者**<br>- 使用Feign调用生产者 | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合Sentinel |  
 | uaa | 8083 | (功能开发未完成)<br>- 认证<br>- 鉴权 | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合Sentinel<br>- 集成Mybatis<br>- 集成MyBatis-Generator<br>- 集成Mybatis PageHelper<br>- 集成tk-mybatis | 
-| resource-service | 8084 | 资源服务 |  | 
+| resource | 8084 | 资源服务 | - 集成Mybatis<br>- 集成MyBatis-Generator<br>- 集成Mybatis PageHelper<br>- 集成tk-mybatis | 
 | demo1 | 8091 | 演示：Spring Cloud集成Nanos服务注册和发现 |  | 
 | demo2 | 8092 | 演示：Spring Cloud集成Nanos分布式配置管理服务 |  | 
 | demo3 | 8093 | 演示：Spring Cloud集成Skywalking链路监控服务 |  | 
