@@ -6,6 +6,7 @@ import org.springframework.security.config.annotation.authentication.builders.Au
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @Configuration
@@ -18,6 +19,12 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Bean
+    @Override
+    public UserDetailsService userDetailsService(){
+        return new UserDetailServiceImpl();
+    }
+
+    @Bean
     public BCryptPasswordEncoder passwordEncoder() {
         // 设置默认的加密方式
         return new BCryptPasswordEncoder();
@@ -25,9 +32,10 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
     @Override
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-        auth.inMemoryAuthentication()
-                .withUser("admin").password(passwordEncoder().encode("123456")).roles("ADMIN")
-                .and()
-                .withUser("user").password(passwordEncoder().encode("123456")).roles("USER");
+        auth.userDetailsService(userDetailsService());
+//        auth.inMemoryAuthentication()
+//                .withUser("admin").password(passwordEncoder().encode("123456")).roles("ADMIN")
+//                .and()
+//                .withUser("user").password(passwordEncoder().encode("123456")).roles("USER");
     }
 }
