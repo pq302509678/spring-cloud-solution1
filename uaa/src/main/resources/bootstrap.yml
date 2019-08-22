@@ -19,18 +19,16 @@ spring:
       max-lifetime: 1800000
       connection-timeout: 30000
       connection-test-query: SELECT 1
-
-  mybatis:
-    config-location: "classpath:mybatis-config.xml"
-    mapper-location: "classpath:mapper/*.xml"
-    type-aliases-package: com.wanglibing.uaa.domain
-
-  logging:
-    level:
-      root: INFO
-      org.springframework.web: INFO
-      org.springframework.security: INFO
-      org.springframework.security.oauth2: INFO
+mybatis:
+  config-location: "classpath:mybatis-config.xml"
+  mapper-location: "classpath:mapper/*.xml"
+  type-aliases-package: com.wanglibing.uaa.domain
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+    org.springframework.security.oauth2: INFO
 #  cloud:
 #    nacos:
 #      # 服务发现

@@ -201,6 +201,13 @@
             <version>2.1.5</version>
         </dependency>
 
+        <!-- 配置PageHelper -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.12</version>
+        </dependency>
+
         <!-- 配置[Guava](https://github.com/google/guava) -->
         <dependency>
             <groupId>com.google.guava</groupId>

@@ -51,7 +51,7 @@
     </typeAliases>
 
     <plugins>
-        <!-- 分页插件 分页插件配置在通用Mapper上面，否则会报错 -->
+        <!-- 分页插件 -->
         <plugin interceptor="com.github.pagehelper.PageInterceptor">
             <!-- 设置数据库类型 Oracle,Mysql,MariaDB,SQLite,Hsqldb,PostgreSQL六种数据库-->
             <!--5.0以后自动识别数据库-->
@@ -65,13 +65,6 @@
             <property name="autoRuntimeDialect" value="true"/>
             <!-- autoRuntimeDialect：默认值为 false。设置为 true 时，允许在运行时根据多数据源自动识别对应方言的分页  -->
             <property name="autoRuntimeDialect" value="true"/>
-        </plugin>
-        <!-- 通用Mapper -->
-        <plugin interceptor="com.github.abel533.mapperhelper.MapperInterceptor">
-            <!--主键自增回写方法,默认值MYSQL,详细说明请看文档 -->
-            <property name="IDENTITY" value="MYSQL" />
-            <!--通用Mapper接口，多个通用接口用逗号隔开 -->
-            <property name="mappers" value="com.github.abel533.mapper.Mapper" />
         </plugin>
     </plugins>
 </configuration>

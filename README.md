@@ -34,7 +34,7 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 | producer | 8081 | **生产者** | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | consumer | 8082 | **消费者**<br>- 使用Feign调用生产者 | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合Sentinel |  
 | uaa | 8083 | (功能开发未完成)<br>- 认证<br>- 鉴权 | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合Sentinel<br>- 集成Mybatis<br>- 集成MyBatis-Generator<br>- 集成Mybatis PageHelper<br>- 集成tk-mybatis | 
-| resource | 8084 | 资源服务 | - 集成Mybatis<br>- 集成MyBatis-Generator<br>- 集成Mybatis PageHelper<br>- 集成tk-mybatis | 
+| resource | 8084 | 资源服务<br>演示：与uaa集成 | - 集成Mybatis<br>- 集成MyBatis-Generator<br>- 集成Mybatis PageHelper<br>- 集成tk-mybatis | 
 | demo1 | 8091 | 演示：Spring Cloud集成Nanos服务注册和发现 |  | 
 | demo2 | 8092 | 演示：Spring Cloud集成Nanos分布式配置管理服务 |  | 
 | demo3 | 8093 | 演示：Spring Cloud集成Skywalking链路监控服务 |  | 
@@ -106,11 +106,11 @@ $ curl -X POST -H "Content-Type: application/x-www-form-urlencoded" -d 'grant_ty
 # 返回access_token
 {"access_token":"c00f90de-8dd3-4429-99b9-36dba6a4ed51","token_type":"bearer","expires_in":43199,"scope":"app"}%
    ```
+ 
 ## resource演示
 
-- http://localhost:8084
-- 用户名：user
-- 密码：参见控制台输出，形如：Using generated security password: cf6a9eb5-6f00-4975-a2bd-a4006901c679
+1. 先获取access_token
+2. http://localhost:8084/?access_token=fb9177d5-1dcb-45da-ab30-d8e5c6b19ebe
 
 ## demo1演示
 
