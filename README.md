@@ -30,10 +30,12 @@ spring-cloud-solution1 是一个基于Spring Cloud的 基础框架示例。
 # 系统介绍
 | 子系统 | 端口 | 说明 | 特性 | 
 | :----: |:----|:----|:----| 
+| user | 8085 | 用户中心 |  | 
+| uaa | 8083 | 认证中心 |  | 
+| log | 8086 | 日志中心 |  | 
 | kong | 80 | (功能开发未完成)<br>**服务网关**。主要功能：<br>- 请求接入<br>- 请求路径校验<br>- 路由 |  | 
 | producer | 8081 | **生产者** | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合gRPC<br>- 整合Sentinel | 
 | consumer | 8082 | **消费者**<br>- 使用Feign调用生产者 | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合Sentinel |  
-| uaa | 8083 | (功能开发未完成)<br>- 认证<br>- 鉴权 | - 集成Nanos服务注册和发现<br>- 集成Nanos分布式配置管理服务<br>- 集成Skywalking链路监控服务<br>- 整合Sentinel<br>- 集成Mybatis<br>- 集成MyBatis-Generator<br>- 集成Mybatis PageHelper<br>- 集成tk-mybatis | 
 | resource | 8084 | 资源服务<br>演示：与uaa集成 | - 集成Mybatis<br>- 集成MyBatis-Generator<br>- 集成Mybatis PageHelper<br>- 集成tk-mybatis | 
 | demo1 | 8091 | 演示：Spring Cloud集成Nanos服务注册和发现 |  | 
 | demo2 | 8092 | 演示：Spring Cloud集成Nanos分布式配置管理服务 |  | 
