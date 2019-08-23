@@ -112,6 +112,7 @@
 
     <!-- 统一配置所有依赖 -->
     <dependencies>
+        <!-- 【必选】必要依赖 开始 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
@@ -122,103 +123,6 @@
                     <artifactId>spring-boot-starter-logging</artifactId>
                 </exclusion>
             </exclusions>
-        </dependency>
-
-        <!-- 配置devtools，可以支持热部署 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-
-        <!-- 配置lombok，可以更方便的使用log4j2 -->
-        <dependency>
-            <groupId>org.projectlombok</groupId>
-            <artifactId>lombok</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-test</artifactId>
-            <scope>test</scope>
-        </dependency>
-
-        <!-- 在 Spring Boot 项目中启动 Nacos 的服务发现功能 -->
-<!--        <dependency>-->
-<!--            <groupId>com.alibaba.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>-->
-<!--        </dependency>-->
-
-        <!-- Nacos 配置管理服务 -->
-<!--        <dependency>-->
-<!--            <groupId>org.springframework.cloud</groupId>-->
-<!--            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>-->
-<!--        </dependency>-->
-
-        <!-- 配置Feign -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-openfeign</artifactId>
-        </dependency>
-
-        <!-- 配置Spring Security OAuth2.0 -->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-oauth2</artifactId>
-        </dependency>
-
-        <!-- 配置MySQL数据库连接驱动 -->
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.46</version>
-        </dependency>
-
-        <!-- 配置HikariCP数据库连接池 -->
-        <dependency>
-            <groupId>com.zaxxer</groupId>
-            <artifactId>HikariCP</artifactId>
-            <version>3.3.1</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-jdbc</artifactId>
-            <exclusions>
-                <!-- 排除 tomcat-jdbc 以使用 HikariCP -->
-                <exclusion>
-                    <groupId>org.apache.tomcat</groupId>
-                    <artifactId>tomcat-jdbc</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
-
-        <!-- 配置tk-mybatis -->
-        <dependency>
-            <groupId>tk.mybatis</groupId>
-            <artifactId>mapper-spring-boot-starter</artifactId>
-            <version>2.1.5</version>
-        </dependency>
-
-        <!-- 配置PageHelper -->
-        <dependency>
-            <groupId>com.github.pagehelper</groupId>
-            <artifactId>pagehelper-spring-boot-starter</artifactId>
-            <version>1.2.12</version>
-        </dependency>
-
-        <!-- 配置Redis -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-
-        <!-- 配置[Guava](https://github.com/google/guava) -->
-        <dependency>
-            <groupId>com.google.guava</groupId>
-            <artifactId>guava</artifactId>
-            <version>28.0-jre</version>
         </dependency>
 
         <!-- 配置log4j2 -->
@@ -248,7 +152,132 @@
             <version>2.7.4</version>
         </dependency>
 
-        <!-- 配置Swagger -->
+        <!-- 配置devtools，可以支持热部署 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-devtools</artifactId>
+            <scope>runtime</scope>
+            <optional>true</optional>
+        </dependency>
+
+        <!-- 配置lombok，可以更方便的使用log4j2 -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <!-- 配置 Nacos 服务发现功能 -->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+        </dependency>
+
+        <!--配置 Nacos 配置管理服务-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+        </dependency>
+
+        <!-- 配置Feign -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
+        <!-- 【必选】必要依赖 结束 -->
+
+
+
+
+        <!-- 【可选】需要纳入认证授权体系 开始 -->
+        <!-- 配置Spring Security OAuth2.0 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-oauth2</artifactId>
+        </dependency>
+        <!-- 【可选】需要纳入认证授权体系 结束 -->
+
+
+
+
+        <!-- 【可选】需要操作MySQL数据库 开始 -->
+        <!-- 配置MySQL数据库连接驱动 -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>5.1.46</version>
+        </dependency>
+
+        <!-- 配置HikariCP数据库连接池 -->
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>3.3.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>
+            <exclusions>
+                <!-- 排除 tomcat-jdbc 以使用 HikariCP -->
+                <exclusion>
+                    <groupId>org.apache.tomcat</groupId>
+                    <artifactId>tomcat-jdbc</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <!-- 配置tk-mybatis -->
+        <dependency>
+            <groupId>tk.mybatis</groupId>
+            <artifactId>mapper-spring-boot-starter</artifactId>
+            <version>2.1.5</version>
+        </dependency>
+
+        <!-- 配置PageHelper -->
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper-spring-boot-starter</artifactId>
+            <version>1.2.12</version>
+        </dependency>
+        <!-- 【可选】需要操作MySQL数据库 结束 -->
+
+
+
+
+        <!-- 【可选】需要操作Redis end -->
+        <!-- 配置Redis -->
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-data-redis</artifactId>-->
+<!--        </dependency>-->
+        <!-- 【可选】需要操作Redis end -->
+
+
+
+
+        <!-- 【可选】第三方工具库 开始 -->
+        <!-- 配置[Guava](https://github.com/google/guava) -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>4.6.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>28.0-jre</version>
+        </dependency>
+        <!-- 【可选】第三方工具库 结束 -->
+
+
+
+        <!-- 【可选】配置Swagger start-->
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger2</artifactId>
@@ -260,6 +289,7 @@
             <artifactId>springfox-swagger-ui</artifactId>
             <version>2.9.2</version>
         </dependency>
+        <!-- 【可选】配置Swagger 结束-->
 
     </dependencies>
 
